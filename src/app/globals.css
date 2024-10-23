@@ -1,27 +1,77 @@
+@import url(./fonts/css/satoshi.css);
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-color: #0E100F;
+  --text-color: #FFFCE1;
+  --sec-color:  #6e7066;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.bg-color {
+  background-color: var(--bg-color);
 }
+
+.border-primary {border-color: var(--text-color);}
+.text-color-primary {color: var(--text-color);}
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Satoshi', sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.description {
+  color: var(--sec-color);
+  font-family: "Playfair Display", serif;
+}
+
+.muted {
+  color: var(--sec-color) !important;
+}
+
+.font-desc {
+  font-family: "Playfair Display", serif;
+}
+
+.button {
+  border: 1px solid var(--text-color);
+  padding: 8px 30px;
+  transition: 150ms;
+  color: var(--text-color);
+}
+
+.button:hover {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  transition: 250ms;
+}
+
+
+.button-black {
+  border: 1px solid black;
+  padding: 8px 30px;
+  transition: 150ms;
+}
+
+.button-black:hover {
+  background-color: black;
+  color: white;
+  transition: 250ms;
+}
+
+.spacer {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+hr {
+  background-color: var(--sec-color) !important;
+}
+
+@media screen and (max-width: 850px) {
+  .phone-hide { display: none;} 
 }
