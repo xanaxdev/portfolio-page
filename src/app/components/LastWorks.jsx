@@ -7,7 +7,7 @@ export default function LastWorks() {
                 <h1 className="text-6xl">
                     {'{'}
                         <span className="text-[35px] font-desc px-5">
-                            My last work{"'"}s
+                            My latest work
                         </span>
                     {'}'}
                 </h1>           
