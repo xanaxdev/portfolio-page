@@ -76,7 +76,7 @@ export default function ContactForm() {
                     {/* Name Field */}
                     <div className="mb-10">
                         <label htmlFor="name" className="block text-3xl font-medium mb-2">
-                            What's your name? <span className="text-red-500">*</span>
+                            What&#39;s your name? <span className="text-red-500">*</span>
                         </label>
                         <input
                             type="text"
@@ -127,7 +127,7 @@ export default function ContactForm() {
                             type="submit"
                             className="button rounded-full"
                         >
-                            Let's speak 👽
+                            Let&#39;s speak 👽
                         </button>
                     </div>
                 </form>
