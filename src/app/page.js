@@ -22,7 +22,7 @@ export default function Home() {
                 </h1>
 
                 <p className="text-center lg:text-left lg:text-lg muted mt-4">
-                    I am Polish FullStack Developer 🧑‍💻
+                    I am polish FullStack Developer 🧑‍💻
                 </p>
 
                 <div className="w-full flex justify-center lg:justify-end mt-10">
@@ -55,7 +55,7 @@ export default function Home() {
                     <h1 className="text-6xl">
                         {'{'}
                         <span className="text-[35px] font-desc px-5">
-                            Who am i?
+                            Who am I?
                           </span>
                         {'}'}
                     </h1>
